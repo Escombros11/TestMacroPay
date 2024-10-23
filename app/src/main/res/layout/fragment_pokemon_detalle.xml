@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".PokemonDetalle">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/rojopokebola"
+                android:layout_gravity="center"
+                android:gravity="center"
+            android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/pokemonDetalleNombre"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <LinearLayout
+                   android:layout_width="130dp"
+                   android:layout_marginLeft="2dp"
+                   android:layout_marginRight="2dp"
+                   android:layout_marginTop="2dp"
+                   android:layout_height="wrap_content">
+                   <ImageView
+                       android:id="@+id/pokemonSprite"
+                       android:scaleType="center"
+                       android:layout_width="match_parent"
+                       android:layout_height="120dp" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                  android:layout_marginLeft="5dp"
+                   android:layout_marginRight="2dp"
+                   android:orientation="vertical">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="35dp"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:id="@+id/pokemonDetalleIdTitulo"
+                           android:layout_gravity="center"
+                           android:gravity="left|center_vertical"
+                           android:layout_weight="60"
+                           android:text="ID:"
+                           android:textStyle="bold"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:textSize="18sp" />
+                           <TextView
+                               android:id="@+id/pokemonDetalleId"
+                               android:layout_gravity="center"
+                               android:layout_weight="40"
+                               android:gravity="left|center_vertical"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:textSize="18sp" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="35dp"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:id="@+id/pokemonDetalleNAnchoTitulo"
+                           android:layout_gravity="center"
+                           android:gravity="left|center_vertical"
+                           android:layout_weight="60"
+                           android:text="Ancho:"
+                           android:textStyle="bold"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:textSize="18sp" />
+                   <TextView
+                       android:id="@+id/pokemonDetalleAncho"
+                       android:layout_gravity="center"
+                       android:layout_weight="40"
+                       android:gravity="left|center_vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:textSize="18sp" />
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="35dp"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:id="@+id/pokemonDetalleAltoTitulo"
+                           android:layout_gravity="center"
+                           android:gravity="left|center_vertical"
+                           android:layout_weight="60"
+                           android:text="Alto:"
+                           android:textStyle="bold"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:textSize="18sp" />
+                   <TextView
+                       android:id="@+id/pokemonDetalleAlto"
+                       android:layout_gravity="center"
+                       android:gravity="left|center_vertical"
+                       android:layout_weight="40"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:textSize="18sp" />
+                   </LinearLayout>
+
+               </LinearLayout>
+
+            </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

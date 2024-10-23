@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/LinearItem"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="2dp"
+
+    android:background="@drawable/rounded_background">
+
+
+
+    <ImageView
+        android:id="@+id/pokemonSprite"
+       android:scaleType="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+         />
+
+    <TextView
+        android:id="@+id/initialsTextView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/circulo"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:textSize="24sp"
+         />
+
+    <TextView
+        android:id="@+id/pokemonName"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18sp" />
+</LinearLayout>
+</LinearLayout>
