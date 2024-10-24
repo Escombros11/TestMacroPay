@@ -14,9 +14,9 @@ class Inicio : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_inicio)
 
-            val pokemonListFragment = PokemonListFragment()
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, pokemonListFragment)
-                .commit()
+        val LoginUsuarioFragment = LoginUsuario()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, LoginUsuarioFragment)
+            .commit()
     }
 }

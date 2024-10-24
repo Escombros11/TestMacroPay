@@ -8,11 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.auth.FirebaseUser
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class PokemonListFragment : Fragment() {
+class PokemonListFragment() : Fragment() {
     private var offset = 0
     private var limit = 25
     private lateinit var adapter: PokemonAdapter
@@ -44,8 +45,8 @@ class PokemonListFragment : Fragment() {
 
                     // Si hay más Pokémon, cargar más
                     if (response.body()!!.next != null) {
-                       this@PokemonListFragment.offset += limit // Actualizar el offset
-                       loadPokemons(this@PokemonListFragment.offset, limit) // Cargar más Pokémon
+                        this@PokemonListFragment.offset += limit // Actualizar el offset
+                        loadPokemons(this@PokemonListFragment.offset, limit) // Cargar más Pokémon
                     }
                 }
             }
